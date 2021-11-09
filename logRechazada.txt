@@ -1,0 +1,3 @@
+tape state: adcd state: q1 read: a rule:  next state: q2 write: _ move: Right
+tape state:  dcd state: q2 read: d rule:  next state: q0 write: d move: Right
+Input chain rejected
