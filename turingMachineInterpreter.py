@@ -28,16 +28,16 @@ while True:
     if currState == machineDef['Qreject']:
         print('Input chain rejected')
         break
+    
     if head == len(chain):
         chain+=' '
-    if head >= 0:
-        rule = machineDef['Delta'][currState][chain[head]]
-        print('current chain: ' + chain + ' state: ' + currState + ' read: ' + chain[head] + ' rule: ' + str(rule))
-        chain = chain[:head] + rule['write'] + chain[head+1:]
-    else:
-        rule = machineDef['Delta'][currState][' ']
-        print('current chain: ' + chain + ' state: ' + currState + ' read: ' + ' ' + ' rule: ' + str(rule))
-        head = -1
+
+    if head < 0:
+        head = 0
+
+    rule = machineDef['Delta'][currState][chain[head]]
+    print('current chain: ' + chain + ' state: ' + currState + ' read: ' + chain[head] + ' rule: ' + str(rule))
+    chain = chain[:head] + rule['write'] + chain[head+1:]
     currState = rule['next']
     head += rule['move']
     
