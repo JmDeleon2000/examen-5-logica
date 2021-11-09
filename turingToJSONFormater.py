@@ -24,7 +24,7 @@ machineDef['Qaccept'] = 'qaccept'
 machineDef['Qreject'] = 'qreject'
 
 machineDef['Delta'] = {
-    'q1':{'0':{'next':'q2', 'write': '0', 'move': 1}, 
+    'q1':{'0':{'next':'q2', 'write': ' ', 'move': 1}, 
             ' ':{'next':'qreject', 'write': ' ', 'move': 1}, 
             'x':{'next':'qreject', 'write': 'x', 'move': 1}, },
     'q2':{'0':{'next':'q3', 'write': 'x', 'move': 1}, 
@@ -36,7 +36,7 @@ machineDef['Delta'] = {
     'q4':{'0':{'next':'q3', 'write': 'x', 'move': 1}, 
             ' ':{'next':'qreject', 'write': ' ', 'move': 1}, 
             'x':{'next':'q4', 'write': 'x', 'move': 1}, },
-    'q4':{'0':{'next':'q5', 'write': '0', 'move': -1}, 
+    'q5':{'0':{'next':'q5', 'write': '0', 'move': -1}, 
             ' ':{'next':'q2', 'write': ' ', 'move': 1}, 
             'x':{'next':'q5', 'write': 'x', 'move': -1}, },
 
