@@ -69,14 +69,14 @@ machineDef['Delta'] = {
             'a':{'next':'q0', 'write': 'a', 'move': 1},
             'b':{'next':'q0', 'write': 'b', 'move': 1},
             'c':{'next':'q0', 'write': 'c', 'move': 1}, 
-            ' ':{'next':'q5', 'write': ' ', 'move': 1}, 
-            'x':{'next':'q4', 'write': 'x', 'move': -1},},
+            ' ':{'next':'q5', 'write': ' ', 'move': -1}, 
+            'x':{'next':'q4', 'write': 'x', 'move': 1},},
    'q5':{'d':{'next':'q0', 'write': 'd', 'move': 1}, 
             'a':{'next':'q0', 'write': 'a', 'move': 1},
             'b':{'next':'q0', 'write': 'b', 'move': 1},
             'c':{'next':'q0', 'write': 'c', 'move': 1}, 
-            ' ':{'next':'q4', 'write': ' ', 'move': -1}, 
-            'x':{'next':'q5', 'write': 'x', 'move': 1},},
+            ' ':{'next':'q4', 'write': ' ', 'move': 1}, 
+            'x':{'next':'q5', 'write': 'x', 'move': -1},},
 }
 
 
